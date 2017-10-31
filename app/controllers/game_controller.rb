@@ -1,8 +1,8 @@
 class GameController < ApplicationController
     def try
-        @name = params[:name]
+        # cookies[:name] = @name
         @rand_num = (1 + rand(100)).to_i
-
+        # @name = params[:name]
         if cookies[:counter] == nil
             cookies[:counter] = 0
         elsif cookies[:counter].to_i >= 5

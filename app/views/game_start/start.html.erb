@@ -1,0 +1,13 @@
+<h1>Welcome to the HI/LO game!!</h1>
+
+<h3>Please enter your name: </h3>
+
+
+<form action="game_start" method="get">
+     <input type="text" id="text_button" name="name" placeholder="Name" />
+</form>
+
+<h2>Hello, <%= @name %> ! Push the button below to begin the game!</h2>
+<form action="game_start" method="get">
+     <input type="submit" id="start_button" value="Start Game!" name="start"/>
+</form>

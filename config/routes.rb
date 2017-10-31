@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
   get '/game' => 'game#try'
-  # get '/new_game' => 'new_game#reset'
+  get '/game_start' => 'game_start#start'
 
 end

@@ -1,13 +1,9 @@
-<h1>I'm thinking of a number between 1 and 100. Try to guess!</h1>
-<br />
 
-<h3>Please enter your name: <%= @name %> </h3>
 
+<h2>Hello, <%=@name%></h2>
+
+<h2>I'm thinking of a number between 1 and 100. Try to guess!</h2>
 <form action="game" method="get">
-     <input type="text" id="text_button" name="name" placeholder="Name" />
-     <br>
-     <br>
-     <br>
      <input type="number" id="num_button" name="number" min="1" max="100" required />
      <br />
      <br>
