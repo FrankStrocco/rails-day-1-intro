@@ -1,13 +1,28 @@
-I'm thinking of a number between 1 and 100. Try to guess.
+<h1>I'm thinking of a number between 1 and 100. Try to guess!</h1>
 <br />
+
+<h3>Please enter your name: <%= @name %> </h3>
+
+<form action="game" method="get">
+     <input type="text" id="text_button" name="name" placeholder="Name" />
+     <br>
+     <br>
+     <br>
+     <input type="number" id="num_button" name="number" min="1" max="100" required />
+     <br />
+     <br>
+     <input type="submit" id="submit_button" value="Submit number"  />
+</form>
+
+
+
+
 <%= cookies[:number] %>
 <br />
-guess is <%= @guess %>
+Your guess is: <%= @guess %>
 <br />
 <%= @result %>
 
 <br />
 
 Guesses: <%= cookies[:counter] %> out of 5
-
-<!-- <button type="button"><a href="page_name">Start Game</a></button> -->

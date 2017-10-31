@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+#num_button{
+    width: 50px;
+    height: 2.5em;
+    font-size: 16px;
+    border: red 2px solid;
+}
+#submit_button {
+    width: 150px;
+    height: 2.5em;
+    border: red 2px solid;
+}
+
+ #text_button {
+     width: 150px;
+     height: 5em;
+     font-size: 16px;
+     border: green 4px solid;
+ }
